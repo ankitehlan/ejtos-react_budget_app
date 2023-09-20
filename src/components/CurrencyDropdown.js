@@ -8,6 +8,7 @@ const CurrencyDropdown = () => {
   const { currencies, dispatch } = useContext(AppContext);
   const [isActive, setIsActive] = useState(false);
   const [dropdownText, setDropdownText] = useState("");
+  
   const setSelectedCurrency = (symbol, label) => {
     setDropdownText(label);
     setIsActive(false);
